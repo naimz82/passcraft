@@ -1,5 +1,5 @@
 # PassCraft - Multi-Language Password/Passphrase Generator
-https://via.placeholder.com/150x50?text=PassCraft
+![PassCraft Logo](https://via.placeholder.com/150x50?text=PassCraft)
 
 **PassCraft** is a multi-language password and passphrase generator available in **C++**, **Java**, **JavaScript**, **PHP**, and **Python**. Each implementation runs in the **Command Line Interface (CLI)**, allowing users to generate secure passwords or memorable passphrases with customizable options.
 
