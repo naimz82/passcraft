@@ -2,6 +2,9 @@
 
 **PassCraft** is a multi-language password and passphrase generator available in **C++**, **Java**, **JavaScript**, **PHP**, and **Python**. Each implementation runs in the **Command Line Interface (CLI)**, allowing users to generate secure passwords or memorable passphrases with customizable options.
 
+> [!NOTE]
+> Most of the examples below are for a Linux/MacOS environment. Windows users will need to adjust accordingly.
+
 ### 📦 Project Structure
 ```text
 passcraft/  
@@ -25,11 +28,18 @@ passcraft/
 - Linux/macOS (already has GCC) or Windows (via MinGW)
 **Steps**
 1. Navigate to the c++/ directory.
-2. Compile the program:
-```sh
-g++ passcraft.cpp -o passcraft
+2. Preprocess the Word List  
+Run these commands in the `passcraft/c++/` directory to convert `enpass-word-list.txt` into a C++ header:  
+ ```bash
+echo "const std::vector<std::string> wordList = {" > wordlist.h
+sed 's/^/    \"/;s/$/\",/' ../enpass-word-list.txt >> wordlist.h
+echo "};" >> wordlist.h
 ```
-3. Run the executable:
+3. Compile the program:
+```sh
+g++ -std=c++17 passcraft.cpp -o passcraft
+```
+4. Run the executable:
 ```sh
 ./passcraft
 ```
