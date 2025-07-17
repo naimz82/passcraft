@@ -49,14 +49,14 @@ g++ -std=c++17 passcraft.cpp -o passcraft
 - Java JDK (≥ 8)
 - (Optional) An IDE like IntelliJ or Eclipse
 **Steps**
-1. Navigate to the java/ directory.
-2. Compile the Java file:
+1. Navigate to the `java/` directory.
+2. Compile the Java files in `src`:
 ```sh
-javac PassCraft.java
+javac src/*.java -d bin/
 ```
 3. Run the program:
 ```sh
-java PassCraft
+java -cp bin passcraft.PassCraft
 ```
 
 #### 3️⃣ JavaScript (Node.js)
