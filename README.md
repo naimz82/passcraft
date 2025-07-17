@@ -90,9 +90,9 @@ php passcraft.php
 1. Navigate to the python/ directory.
 2. Run the script:
 ```sh
-python passcraft.py
+python3 passcraft.py
 ```
-(or `python3 passcraft.py` if needed)
+(or `python passcraft.py` if needed)
 
 ### 🤝 Contributing
 Contributions are welcomed! If you want to:
